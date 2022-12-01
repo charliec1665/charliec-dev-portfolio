@@ -8,15 +8,16 @@ function Nav(props) {
     } = props;
 
     return (
-        <header className='flex-row px-1'>
-            <h1>
+        <>
+        <header className='d-flex px-4 py-2 justify-content-between'>
+            <h1 className='my-2 mx-2'>
                 <a data-testid='link' href='/'>
                     Charlie Carter
                 </a>
             </h1>
             <nav>
-                <ul className='flex-row'>
-                    <li className='mx-2'>
+                <ul className='d-flex justify-content-end'>
+                    <li className='mx-2 my-3'>
                         <a
                             data-testid='about'
                             href='#about'
@@ -25,7 +26,7 @@ function Nav(props) {
                             About Me
                         </a>
                     </li>
-                    <li className='mx-2'>
+                    <li className='mx-2 my-3'>
                         <a
                             data-testid='work'
                             href='#work'
@@ -34,14 +35,14 @@ function Nav(props) {
                             Work
                         </a>
                     </li>
-                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+                    <li className={`mx-2 my-3 ${contactSelected && 'navActive'}`}>
                         <span
                             onClick={() => setContactSelected(true)}
                         >
                             Contact Me
                         </span>
                     </li>
-                    <li className='mx-2'>
+                    <li className='mx-2 my-3'>
                         <a
                             data-testid='resume'
                             href='#resume'
@@ -53,6 +54,10 @@ function Nav(props) {
                 </ul>
             </nav>
         </header>
+        <section className='hero'>
+            <h2>Portfolio</h2>
+        </section>
+        </>
     )
 }
 
