@@ -26,6 +26,7 @@ function App() {
           <>
             <About></About>
             <Work></Work>
+            <Resume></Resume>
           </>
         ) : (
           // else render contact form

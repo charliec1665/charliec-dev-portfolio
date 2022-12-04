@@ -2,13 +2,16 @@ import React from 'react'
 
 function Resume() {
     return(
-        <div className='my-5 mx-3' id='resume-container'>
-            <div className='my-2 mx-2 py-2 px-2' id='summary'>
+        <div className='mx-4 mb-5 px-2' id='resume'>
+            <div className='mx-5 py-2 px-2' id='summary'>
                 <h3>Professional Summary</h3>
-                <ul>
+                <ul className='mx-5 px-5'>
                     <li>
                         Proficient in translating designs and wireframes into quality code, designing and implementing <span>responsive user
-                        interface</span> components, and adept at updating and modularising old code to modern development standards.
+                        interface</span> components.
+                    </li>
+                    <li>
+                        Adept at <span>updating and modularising</span> older codebases to modern development standards.
                     </li>
                     <li>
                         Experience determining the structure and <span>design of web pages</span> based on user requirements and balancing
@@ -39,7 +42,10 @@ function Resume() {
                         Experience in <span>MERN</span> stack development: <span>MongoDB, Express, React, and Node.</span>
                     </li>
                 </ul>
+                <p>View Charlie's complete resume <span><a href='#' id='resume-link'>here.</a></span></p>
             </div>
         </div>
     )
 }
+
+export default Resume;

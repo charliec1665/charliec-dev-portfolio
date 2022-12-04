@@ -38,11 +38,12 @@ function Nav(props) {
                         </a>
                     </li>
                     <li className={`mx-2 my-3 ${contactSelected && 'navActive'}`}>
-                        <span
+                        <a
+                            href='#contact'
                             onClick={() => setContactSelected(true) && setResumeSelected(false)}
                         >
                             Contact Me
-                        </span>
+                        </a>
                     </li>
                     <li className={`mx-2 my-3 ${resumeSelected && 'navActive'}`}>
                         <a
