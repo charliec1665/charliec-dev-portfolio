@@ -4,7 +4,9 @@ function Nav(props) {
     // initialize states as an array
     const {
         contactSelected,
-        setContactSelected
+        setContactSelected,
+        resumeSelected,
+        setResumeSelected
     } = props;
 
     return (
@@ -21,7 +23,7 @@ function Nav(props) {
                         <a
                             data-testid='about'
                             href='#about'
-                            onClick={() => setContactSelected(false)}
+                            onClick={() => setContactSelected(false) && setResumeSelected(false)}
                         >
                             About Me
                         </a>
@@ -30,23 +32,23 @@ function Nav(props) {
                         <a
                             data-testid='work'
                             href='#work'
-                            onClick={() => setContactSelected(false)}
+                            onClick={() => setContactSelected(false) && setResumeSelected(false)}
                         >
                             Work
                         </a>
                     </li>
                     <li className={`mx-2 my-3 ${contactSelected && 'navActive'}`}>
                         <span
-                            onClick={() => setContactSelected(true)}
+                            onClick={() => setContactSelected(true) && setResumeSelected(false)}
                         >
                             Contact Me
                         </span>
                     </li>
-                    <li className='mx-2 my-3'>
+                    <li className={`mx-2 my-3 ${resumeSelected && 'navActive'}`}>
                         <a
                             data-testid='resume'
                             href='#resume'
-                            onClick={() => setContactSelected(false)}
+                            onClick={() => setContactSelected(false) && setResumeSelected(true)}
                         >
                             Resume
                         </a>
