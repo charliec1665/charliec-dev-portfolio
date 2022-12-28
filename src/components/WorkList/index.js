@@ -28,12 +28,12 @@ const WorkList = () => {
         },
         {
             title: 'Inkling',
-            link: '#',
+            link: 'https://salty-wave-70415.herokuapp.com/',
             screenshot: WorkSample4,
             alt: 'Work Sample 4',
             id: 'sample-tag4',
             description: 'HTML / CSS / Bootstrap / React.js / NoSQL / Express.js / MongoDB',
-            github: 'https://github.com/charliec1665/inkling'
+            github: 'https://github.com/ejackson1228/space-whY'
         },
         {
             title: 'Sample 5',
