@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import WorkSample2 from '../../assets/images/official-work-sample1.png'
 import WorkSample3 from '../../assets/images/official-work-sample2.png'
-import WorkSample4 from '../../assets/images/work-sample4.jpg'
+import WorkSample4 from '../../assets/images/official-work-sample4.jpeg'
 import WorkSample5 from '../../assets/images/work-sample5.jpg'
 import GithubIcon from '../../assets/logos/GitHub-Mark/PNG/GitHub-Mark-32px.png'
 
