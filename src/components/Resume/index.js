@@ -42,7 +42,12 @@ function Resume() {
                         Experience in <span>MERN</span> stack development: <span>MongoDB, Express, React, and Node.</span>
                     </li>
                 </ul>
-                <p>View Charlie's complete resume <span><a href='#' id='resume-link'>here.</a></span></p>
+                <p>View Charlie's complete resume 
+                    <span>
+                        <a href='https://docs.google.com/document/d/1gFBY4nNaQaxqd5D1qC-17XH8VcFskEVl/edit?usp=sharing&ouid=111402451328955360605&rtpof=true&sd=true' 
+                        id='resume-link'>here.</a>
+                    </span>
+                </p>
             </div>
         </div>
     )
