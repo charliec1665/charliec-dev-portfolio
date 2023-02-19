@@ -9,7 +9,7 @@ function Work() {
                 Work
             </h3>
             <div>
-                <div className='work-sample1'>
+                {/* <div className='work-sample1'>
                     <a href='https://github.com/zasen01/smooth-ops' className='d-flex justify-content-center'>
                         <img src={OperationPokedex} alt='Work sample 1, Operation Pokedex team builder'></img>
                     </a>
@@ -17,7 +17,7 @@ function Work() {
                         <h4>Operation Pokedex</h4>
                         <p>HTML / CSS / Bootstrap / Javascript / MySQL / Sequelize / Node.js / Express.js / Handlebars.js</p>
                     </div>
-                </div>
+                </div> */}
                 <WorkList></WorkList>
             </div>
         </section>
