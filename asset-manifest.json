@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/charliec-dev-portfolio/static/css/main.a138ceb8.css",
-    "main.js": "/charliec-dev-portfolio/static/js/main.5af1a0e8.js",
+    "main.css": "/charliec-dev-portfolio/static/css/main.6182312d.css",
+    "main.js": "/charliec-dev-portfolio/static/js/main.83d4d29d.js",
     "static/js/787.1c86ac0b.chunk.js": "/charliec-dev-portfolio/static/js/787.1c86ac0b.chunk.js",
     "static/media/me-img.jpg": "/charliec-dev-portfolio/static/media/me-img.aa47d65ad47a33c9656e.jpg",
     "static/media/hero-cord-image.png": "/charliec-dev-portfolio/static/media/hero-cord-image.9e033b7d7e41e3fe3139.png",
     "static/media/official-work-sample1.png": "/charliec-dev-portfolio/static/media/official-work-sample1.f3322e83358e30b93acf.png",
-    "static/media/work-sample4.jpg": "/charliec-dev-portfolio/static/media/work-sample4.dfe03c72a26e4001e1a6.jpg",
-    "static/media/work-sample5.jpg": "/charliec-dev-portfolio/static/media/work-sample5.b88c2dee96c603af1793.jpg",
-    "static/media/official-work-sample3.png": "/charliec-dev-portfolio/static/media/official-work-sample3.5a6f13de46e72f0bea8d.png",
+    "static/media/official-work-sample4.jpeg": "/charliec-dev-portfolio/static/media/official-work-sample4.a0b3e99312c083d33561.jpeg",
     "static/media/official-work-sample2.png": "/charliec-dev-portfolio/static/media/official-work-sample2.de9810ae6c0f4dcf224a.png",
+    "static/media/official-work-sample5.png": "/charliec-dev-portfolio/static/media/official-work-sample5.4c114c2accd738272475.png",
     "static/media/logo-stackoverflow.png": "/charliec-dev-portfolio/static/media/logo-stackoverflow.ba752b5769584b2cdaa1.png",
     "index.html": "/charliec-dev-portfolio/index.html",
-    "main.a138ceb8.css.map": "/charliec-dev-portfolio/static/css/main.a138ceb8.css.map",
-    "main.5af1a0e8.js.map": "/charliec-dev-portfolio/static/js/main.5af1a0e8.js.map",
+    "main.6182312d.css.map": "/charliec-dev-portfolio/static/css/main.6182312d.css.map",
+    "main.83d4d29d.js.map": "/charliec-dev-portfolio/static/js/main.83d4d29d.js.map",
     "787.1c86ac0b.chunk.js.map": "/charliec-dev-portfolio/static/js/787.1c86ac0b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a138ceb8.css",
-    "static/js/main.5af1a0e8.js"
+    "static/css/main.6182312d.css",
+    "static/js/main.83d4d29d.js"
   ]
 }
