@@ -3,9 +3,9 @@ import React from 'react'
 function Resume() {
     return(
         <div className='mx-4 mb-5 px-2' id='resume'>
-            <div className='mx-5 py-2 px-2' id='summary'>
+            <div className='mx-5 pb-2 px-2' id='summary'>
                 <h3>Professional Summary</h3>
-                <ul className='mx-5 px-5'>
+                <ul className='mx-5 my-3 px-5'>
                     <li>
                         Proficient in translating designs and wireframes into quality code, designing and implementing <span>responsive user
                         interface</span> components.

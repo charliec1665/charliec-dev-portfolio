@@ -15,7 +15,8 @@ const WorkList = () => {
             screenshot: WorkSample1,
             alt: 'Work Sample 1, Operation Pokèdex',
             id: 'sample-tag1',
-            description: 'HTML / CSS / Bootstrap / Javascript / MySQL / Sequelize / Node.js / Express.js / Handlebars.js',
+            languages: 'HTML / CSS / Bootstrap / Javascript / MySQL / Sequelize / Node.js / Express.js / Handlebars.js',
+            description: 'Blog-style Pokè Team Builder and social application.',
             github: 'https://github.com/zasen01/smooth-ops'
         },
         {
@@ -24,7 +25,8 @@ const WorkList = () => {
             screenshot: WorkSample2,
             alt: 'Work Sample 2, Run Buddy',
             id: 'sample-tag2',
-            description: 'HTML / CSS',
+            languages: 'HTML / CSS',
+            description: 'An application to offer fitness training services.',
             github: 'https://github.com/charliec1665/run-buddy'
         },
         {
@@ -33,7 +35,8 @@ const WorkList = () => {
             screenshot: WorkSample4,
             alt: 'Work Sample 3, Inkling',
             id: 'sample-tag4',
-            description: 'HTML / CSS / Bootstrap / React.js / NoSQL / Express.js / MongoDB',
+            languages: 'HTML / CSS / Bootstrap / React.js / NoSQL / Express.js / MongoDB',
+            description: 'Twitter-style social media application.',
             github: 'https://github.com/ejackson1228/space-whY'
         },
         {
@@ -42,14 +45,15 @@ const WorkList = () => {
             screenshot: WorkSample3,
             alt: 'Work Sample 4, iNeedADrink',
             id: 'sample-tag3',
-            description: 'HTML / CSS / Materialize / Javascript / jQuery & jQuery UI / Server-side APIs',
+            languages: 'HTML / CSS / Materialize / Javascript / jQuery & jQuery UI / Server-side APIs',
+            description: 'Cocktail recipe generator and shopping list handler',
             github: 'https://github.com/charliec1665/wind-hawks'
         }
     ])
 
     return (
         <div>
-            <div className="mx-3 work-sample d-flex flex-row flex-wrap">
+            <div className="work-sample d-flex flex-row flex-wrap justify-content-center">
                 {/* mapping works array to render each work and its respective tag */}
                 {works.map((work) => (
                     <div>
@@ -70,6 +74,7 @@ const WorkList = () => {
                                     <img id='github-ico' src={GithubIcon} style={{ width: '30px' }}></img>
                                 </a>
                             </div>
+                            <p>{work.languages}</p>
                             <p>{work.description}</p>
                         </div>
                     </div>

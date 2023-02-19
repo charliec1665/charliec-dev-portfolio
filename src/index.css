@@ -13,7 +13,6 @@
 }
 
 body {
-  
   background-color: var(--light-color);
   color: var(--dark-color);
 }
@@ -128,20 +127,6 @@ h3 {
   padding: 20px 70px;
 }
 
-/* .work-sample1 a img {
-  margin: 25px auto 10px auto;
-  width: 80%;
-  opacity: 90%;
-  border: 5px solid var(--dark-color);
-  border-radius: 1%;
-  box-shadow: 5px 5px 10px var(--dark-color);
-}
-
-.work-sample1 a img:hover {
-  box-shadow: none;
-  opacity: 50%;
-} */
-
 .work-sample a img {
   margin: 0 20px;
   width: 475px;
@@ -159,21 +144,17 @@ h3 {
 .sample-tag {
   color: #263940;
   background-color: var(--secondary-med-color);
-  width: 300px;
-  height: 100px;
+  width: 400px;
+  height: 150px;
+  margin: 0 0 5% 0;
   padding: 10px;
   position: relative;
-  bottom: 130px;
-  /* left: 5%; */
+  bottom: 170px;
   border: 2px solid var(--secondary-med-color);
   border-radius: 1px;
   box-shadow: 5px 5px 10px var(--dark-color);
   font-size: 14.5px;
 }
-
-/* #worklist-img {
-  margin-left: 7%;
-} */
 
 #github-ico {
   border: .5px solid var(--secondary-med-color);
