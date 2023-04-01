@@ -44,7 +44,7 @@ function Resume() {
                 </ul>
                 <p>View Charlie's complete resume 
                     <span>
-                        <a href='httpshttps://drive.google.com/file/d/1ku4CgOsXt_otbOXcisxF1XhroUbHTHa1/view?usp=sharing://docs.google.com/document/d/1gFBY4nNaQaxqd5D1qC-17XH8VcFskEVl/edit?usp=sharing&ouid=111402451328955360605&rtpof=true&sd=true' 
+                        <a href='https://drive.google.com/file/d/1ku4CgOsXt_otbOXcisxF1XhroUbHTHa1/view?usp=sharing://docs.google.com/document/d/1gFBY4nNaQaxqd5D1qC-17XH8VcFskEVl/edit?usp=sharing&ouid=111402451328955360605&rtpof=true&sd=true' 
                         id='resume-link'>here.</a>
                     </span>
                 </p>
