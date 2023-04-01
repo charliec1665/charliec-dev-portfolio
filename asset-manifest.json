@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/charliec-dev-portfolio/static/css/main.6182312d.css",
-    "main.js": "/charliec-dev-portfolio/static/js/main.83d4d29d.js",
+    "main.js": "/charliec-dev-portfolio/static/js/main.94abe395.js",
     "static/js/787.1c86ac0b.chunk.js": "/charliec-dev-portfolio/static/js/787.1c86ac0b.chunk.js",
     "static/media/me-img.jpg": "/charliec-dev-portfolio/static/media/me-img.aa47d65ad47a33c9656e.jpg",
     "static/media/hero-cord-image.png": "/charliec-dev-portfolio/static/media/hero-cord-image.9e033b7d7e41e3fe3139.png",
@@ -12,11 +12,11 @@
     "static/media/logo-stackoverflow.png": "/charliec-dev-portfolio/static/media/logo-stackoverflow.ba752b5769584b2cdaa1.png",
     "index.html": "/charliec-dev-portfolio/index.html",
     "main.6182312d.css.map": "/charliec-dev-portfolio/static/css/main.6182312d.css.map",
-    "main.83d4d29d.js.map": "/charliec-dev-portfolio/static/js/main.83d4d29d.js.map",
+    "main.94abe395.js.map": "/charliec-dev-portfolio/static/js/main.94abe395.js.map",
     "787.1c86ac0b.chunk.js.map": "/charliec-dev-portfolio/static/js/787.1c86ac0b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6182312d.css",
-    "static/js/main.83d4d29d.js"
+    "static/js/main.94abe395.js"
   ]
 }
