@@ -1,5 +1,5 @@
 import React from 'react'
-import Photo from '../../assets/images/me-img.jpg'
+import Photo from '../../assets/images/me-img-resized.jpg'
 
 function About() {
     return (
@@ -8,8 +8,8 @@ function About() {
                 About Me
             </h3>
             <div className='d-flex justify-content-between'>
-                <img src={Photo} className='my-1 mx-1' style={{ width: '23%' }} alt='Charlie Carter' />
-                <div className='ml-5 pt-3'>
+                <img src={Photo} className='my-1 mx-1' alt='Charlie Carter' />
+                <div className='ml-5 pt-3' id='about-paragraph'>
                     <p className='py-3'>
                         Charlie is a full stack web developer with a certification from UNC Charlotte's Coding Bootcamp. Coming from a background
                         in art and illustration (with their MA in Illustration from SCAD), Charlie combines their love of learning and thirst for 

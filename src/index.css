@@ -116,7 +116,6 @@ h3 {
 }
 
 #about-me img {
-  top: 450px;
   border: 2px solid var(--dark-color);
   border-radius: 2px;
   box-shadow: 5px 5px 10px var(--dark-color);
@@ -210,4 +209,48 @@ footer {
   margin-top: 3rem;
   position: absolute;
   left: 0; right: 0; bottom: 0;
+}
+
+/* MEDIA QUERIES FOR SMALL DESKTOP SCREENS AND SMALLER */
+
+@media screen and (max-width: 1005px) {
+  #about-me img {
+    width: 230px;
+    height: 306px;
+  }
+}
+
+/* MEDIA QUERIES FOR TABLETS AND SMALLER */
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hero h2 {
+    width: 25%;
+  }
+
+  #about-me img {
+    width: 190;
+    height: 253;
+  }
+}
+
+/* MEDIA QUERIES FOR MOBILE PHONES AND SMALLER */
+
+@media screen and (max-width: 575px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hero h2 {
+    width: 50%;
+  }
+
+  .about-paragraph {
+    width: 80%;
+  }
 }
