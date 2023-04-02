@@ -6,6 +6,11 @@ import WorkSample4 from '../../assets/images/official-work-sample4.jpeg'
 // import WorkSample5 from '../../assets/images/work-sample5.jpg'
 import GithubIcon from '../../assets/logos/GitHub-Mark/PNG/GitHub-Mark-32px.png'
 
+// REACT BOOTSTRAP
+// import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
+
 const WorkList = () => {
     // array of information for each portfolio item
     const [works] = useState([
@@ -53,7 +58,7 @@ const WorkList = () => {
 
     return (
         <div>
-            <div className="work-sample d-flex flex-row flex-wrap justify-content-center">
+            <Row className="work-sample d-flex flex-row flex-wrap justify-content-center">
                 {/* mapping works array to render each work and its respective tag */}
                 {works.map((work) => (
                     <div>
@@ -79,7 +84,7 @@ const WorkList = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </Row>
         </div>
     )
 }
