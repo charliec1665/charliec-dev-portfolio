@@ -18,7 +18,7 @@ function Footer() {
                     <img src={stackOverflowLogo} alt='Stack Overflow' className='my-2 mx-1' style={{ width: '28px' }}></img>
                 </a>
             </div>
-            <div className='pt-3 mx-5 d-flex justify-content-end align-items-center'>
+            <div className='pt-3 mx-5 d-flex justify-content-end align-items-center' id='footer-sig'>
                 <p>Made with 💛 by Charlie</p>
             </div>
         </footer>

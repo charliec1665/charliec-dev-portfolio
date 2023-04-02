@@ -103,16 +103,16 @@ header nav ul li a:hover {
 h3 {
   flex: 1 100%;
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 700;
   border-bottom: 2px solid var(--secondary-dark-color);
   width: 100%;
   padding: 10px 0;
 }
 
 #about-me {
-  padding: 20px 70px 35px 70px;
   display: flex;
   flex-wrap: wrap;
+  color: var(--dark-color);
 }
 
 #about-me img {
@@ -122,8 +122,8 @@ h3 {
 }
 
 /* WORK SAMPLES START HERE */
-.work {
-  padding: 20px 70px;
+#work {
+  color: var(--dark-color);
 }
 
 .work-sample a img {
@@ -185,8 +185,7 @@ h3 {
 /* RESUME STARTS HERE */
 
 #resume {
-  margin-bottom: 200px;
-  padding-bottom: 70px;
+  color: var(--dark-color);
 }
 
 #summary span {
@@ -211,12 +210,15 @@ footer {
   left: 0; right: 0; bottom: 0;
 }
 
+#footer-sig {
+  color: var(--dark-color);
+}
+
 /* MEDIA QUERIES FOR SMALL DESKTOP SCREENS AND SMALLER */
 
 @media screen and (max-width: 1005px) {
-  #about-me img {
-    width: 230px;
-    height: 306px;
+  .hero h2 {
+    width: 25%;
   }
 }
 
@@ -227,30 +229,29 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
-
-  .hero h2 {
-    width: 25%;
-  }
-
-  #about-me img {
-    width: 190;
-    height: 253;
-  }
 }
 
 /* MEDIA QUERIES FOR MOBILE PHONES AND SMALLER */
 
 @media screen and (max-width: 575px) {
-  header {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .hero h2 {
     width: 50%;
   }
 
-  .about-paragraph {
-    width: 80%;
+  header nav ul li {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 70px;
+  }
+
+  #photo {
+    width: 85%;
+    margin: auto;
+  }
+
+  #about-paragraph {
+    flex: 0 100%;
   }
 }

@@ -1,28 +1,41 @@
 import React from 'react'
-import Photo from '../../assets/images/me-img-resized.jpg'
+import Photo from '../../assets/images/me-img-300x400.jpg'
+
+// REACT BOOTSTRAP
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function About() {
     return (
-        <section className='my-5 mx-3' id='about-me'>
+        <section className='my-5 mx-5 py-5' id='about-me'>
             <h3 id='about'>
                 About Me
             </h3>
-            <div className='d-flex justify-content-between'>
-                <img src={Photo} className='my-1 mx-1' alt='Charlie Carter' />
-                <div className='ml-5 pt-3' id='about-paragraph'>
-                    <p className='py-3'>
-                        Charlie is a full stack web developer with a certification from UNC Charlotte's Coding Bootcamp. Coming from a background
-                        in art and illustration (with their MA in Illustration from SCAD), Charlie combines their love of learning and thirst for 
-                        challenge with their skill in creativity. Charlie offers a unique perspective when working with code, knowing that
-                        it can be just as important to nail down those little details as it is to have a design work comprehensively as a whole.
-                    </p>
-                    <p className='pb-3'>
-                        Charlie's skill set includes working with Javascript, CSS, Bootstrap, and React on the front end. As well as APIs, Node.js, 
-                        Object-Oriented Programming (OOP), Express.js, SQL, Object-Relational Mapping (ORM), Model-View-Controllers (MVC), NoSQL
-                        with Mongoose and MongoDB, PWAs, and MERN.
-                    </p>
-                </div>
-            </div>
+            <Container fluid='md' className='d-flex flex justify-content-center'>
+                <Row>
+                    <Col className='justify-content-center'>
+                        <img src={Photo} className='my-3' alt='Charlie Carter' id='photo'/>
+                    </Col>
+                    <Col id='about-paragraph'>
+                        <Row>
+                            <p className='py-3' id='p1'>
+                                Charlie is a full stack web developer with a certification from UNC Charlotte's Coding Bootcamp. Coming from a background
+                                in art and illustration (with their MA in Illustration from SCAD), Charlie combines their love of learning and thirst for 
+                                challenge with their skill in creativity. Charlie offers a unique perspective when working with code, knowing that
+                                it can be just as important to nail down those little details as it is to have a design work comprehensively as a whole.
+                            </p>
+                        </Row>
+                        <Row>
+                            <p className='pb-3' id='p2'>
+                                Charlie's skill set includes working with Javascript, CSS, Bootstrap, and React on the front end. As well as APIs, Node.js, 
+                                Object-Oriented Programming (OOP), Express.js, SQL, Object-Relational Mapping (ORM), Model-View-Controllers (MVC), NoSQL
+                                with Mongoose and MongoDB, PWAs, and MERN.
+                            </p>
+                        </Row>
+                    </Col>
+                </Row>
+            </Container>
         </section>
     )
 }

@@ -3,7 +3,7 @@ import WorkList from '../WorkList'
 
 function Work() {
     return (
-        <section className='work mx-3'>
+        <section className='mx-5' id='work'>
             <h3 id='work'>
                 Work
             </h3>
