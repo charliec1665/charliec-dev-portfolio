@@ -243,7 +243,7 @@ footer {
   }
 
   h3 {
-    font-size: 70px;
+    font-size: 35px;
   }
 
   #photo {
@@ -253,5 +253,18 @@ footer {
 
   #about-paragraph {
     flex: 0 100%;
+    font-size: 21px;
+  }
+
+  #summary {
+    font-size: 21px;
+  }
+
+  #summary span {
+    font-size: 22px;
+  }
+
+  #footer-sig {
+    font-size: 18px;
   }
 }
