@@ -12,20 +12,20 @@ function Nav(props) {
     return (
         <>
         <header className='d-flex px-4 py-2 justify-content-between'>
-            <h1 className='my-2 mx-2'>
+            <h1 className='mt-2 mx-2'>
                 <a data-testid='link' href='/'>
                     Charlie Carter
                 </a>
             </h1>
             <nav>
-                <ul className='d-flex justify-content-end'>
+                <ul className='d-flex justify-content-center'>
                     <li className='mx-2 my-3'>
                         <a
                             data-testid='about'
                             href='#about'
                             onClick={() => setContactSelected(false) && setResumeSelected(false)}
                         >
-                            About Me
+                            About
                         </a>
                     </li>
                     <li className='mx-2 my-3'>
@@ -42,7 +42,7 @@ function Nav(props) {
                             href='#contact'
                             onClick={() => setContactSelected(true) && setResumeSelected(false)}
                         >
-                            Contact Me
+                            Contact
                         </a>
                     </li>
                     <li className={`mx-2 my-3 ${resumeSelected && 'navActive'}`}>

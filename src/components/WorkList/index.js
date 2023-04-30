@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import WorkSample1 from '../../assets/images/official-work-sample5.png'
-import WorkSample2 from '../../assets/images/official-work-sample1.png'
-import WorkSample3 from '../../assets/images/official-work-sample2.png'
+import WorkSample1 from '../../assets/images/work-sample-pokedex.png'
+import WorkSample2 from '../../assets/images/work-sample-runbuddy.png'
+import WorkSample3 from '../../assets/images/work-sample-iNeedaDrink.png'
 import WorkSample4 from '../../assets/images/official-work-sample4.jpeg'
 // import WorkSample5 from '../../assets/images/work-sample5.jpg'
 import GithubIcon from '../../assets/logos/GitHub-Mark/PNG/GitHub-Mark-32px.png'
@@ -46,7 +46,7 @@ const WorkList = () => {
         },
         {
             title: 'iNeedADrink',
-            link: 'https://charliec1665.github.io/wind-hawks/',
+            link: 'https://charliec1665.github.io/i-need-a-drink/',
             screenshot: WorkSample3,
             alt: 'Work Sample 4, iNeedADrink',
             id: 'sample-tag3',
@@ -57,7 +57,7 @@ const WorkList = () => {
     ])
 
     return (
-        <div>
+        
             <Row className="work-sample d-flex flex-row flex-wrap justify-content-center">
                 {/* mapping works array to render each work and its respective tag */}
                 {works.map((work) => (
@@ -76,7 +76,7 @@ const WorkList = () => {
                             <div className='d-flex justify-content-between'>
                                 <h4>{work.title}</h4>
                                 <a href={work.github}>
-                                    <img id='github-ico' src={GithubIcon} style={{ width: '30px' }}></img>
+                                    <img id='github-ico' src={GithubIcon} style={{ width: '35px' }}></img>
                                 </a>
                             </div>
                             <p>{work.languages}</p>
@@ -85,7 +85,7 @@ const WorkList = () => {
                     </div>
                 ))}
             </Row>
-        </div>
+        
     )
 }
 

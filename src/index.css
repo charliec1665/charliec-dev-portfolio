@@ -22,12 +22,12 @@ body a {
   color: var(--secondary-dark-color);
 }
 
-.container {
+/* .container {
   width: 85%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 /* HERO STARTS HERE */
 .hero {
@@ -127,8 +127,9 @@ h3 {
 }
 
 .work-sample a img {
-  margin: 0 20px;
-  width: 475px;
+  margin: 0 10rem;
+  width: 75%;
+  height: 75%;
   opacity: 90%;
   border: 5px solid var(--dark-color);
   border-radius: 1%;
@@ -144,11 +145,12 @@ h3 {
   color: #03444e;
   background-color: var(--secondary-med-color);
   width: 400px;
-  height: 150px;
+  height: 165px;
   margin: 0 0 5% 0;
   padding: 10px;
   position: relative;
-  bottom: 170px;
+  bottom: 28%;
+  left: 9%;
   border: 2px solid var(--secondary-med-color);
   border-radius: 1px;
   box-shadow: 5px 5px 10px var(--dark-color);
@@ -156,6 +158,8 @@ h3 {
 }
 
 #github-ico {
+  width: 35px;
+  height: 35px;
   border: .5px solid var(--secondary-med-color);
   border-radius: 7px;
   box-shadow: 0px 0px 5px var(--dark-color);
@@ -220,6 +224,10 @@ footer {
   .hero h2 {
     width: 25%;
   }
+
+  .work-sample a img {
+    margin: 0 5rem;
+  }
 }
 
 /* MEDIA QUERIES FOR TABLETS AND SMALLER */
@@ -242,8 +250,21 @@ footer {
     width: 50%;
   }
 
+  header h1 {
+    margin-bottom: 0px;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav a {
+    width: 100%;
+  }
+
   header nav ul li {
-    font-size: 40px;
+    font-size: 45px;
+    /* height: 10%; */
   }
 
   h3 {
@@ -257,7 +278,7 @@ footer {
 
   #about-paragraph {
     flex: 0 100%;
-    font-size: 21px;
+    font-size: 18px;
   }
 
   .work-sample a img {
@@ -268,11 +289,11 @@ footer {
 
   .sample-tag {
     width: 285px;
-    height: 250px;
-    font-size: 20px;
+    height: 225px;
+    font-size: 18px;
     bottom: 75px;
     margin: 0;
-    margin-left: 25px;
+    margin-left: 0px;
   }
 
   .sample-tag h4 {
@@ -286,11 +307,11 @@ footer {
   }
 
   #summary {
-    font-size: 21px;
+    font-size: 19px;
   }
 
   #summary span {
-    font-size: 22px;
+    font-size: 21px;
   }
 
   #footer-sig {

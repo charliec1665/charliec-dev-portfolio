@@ -8,16 +8,16 @@ import Col from 'react-bootstrap/Col';
 
 function About() {
     return (
-        <section className='my-5 mx-5 py-5' id='about-me'>
+        <section className='my-5 mx-4 py-5' id='about-me'>
             <h3 id='about'>
                 About Me
             </h3>
             <Container fluid='md' className='d-flex flex justify-content-center'>
                 <Row>
-                    <Col className='justify-content-center'>
+                    <Col className='flex justify-content-center mx-2'>
                         <img src={Photo} className='my-3' alt='Charlie Carter' id='photo'/>
                     </Col>
-                    <Col id='about-paragraph'>
+                    <Col id='about-paragraph' className=''>
                         <Row>
                             <p className='py-3' id='p1'>
                                 Charlie is a full stack web developer with a certification from UNC Charlotte's Coding Bootcamp. Coming from a background
