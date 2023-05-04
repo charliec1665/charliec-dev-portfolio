@@ -1,5 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { validateEmail } from '../../utils/helpers'
+// import emailjs from '@emailjs/browser';
+// REACT BOOTSTRAP
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 
 function ContactForm() {
@@ -43,38 +50,64 @@ function ContactForm() {
     function handleSubmit(e) {
         e.preventDefault();
         console.log(formState);
-    }
+    };
+    // export const HandleSubmit(e) {
+    //     e.preventDefault();
+    //     console.log(formState);
+    //     const form= useRef();
+    //     // use emailjs to send the form input to charliec1665@gmail.com
+    //     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    //         .then((result) => {
+    //             console.log(result.text);
+    //         }, (error) => {
+    //             console.log(error.text);
+    //         });
+    // };
     
     // JSX
     return (
-        <section className='my-5 mx-5'>
+        <section className='my-5 mx-5 justify-content-center'>
             <h3 className='my-3 d-flex justify-content-center' id='contact'>Contact Me</h3>
-            <form id='contact-form' onSubmit={handleSubmit} className='my-3'>
-                {/* name input */}
-                <div className='my-3 pt-3 d-flex justify-content-center'>
-                    <label htmlFor='name' className='px-3'>Name:</label>
-                    <input type='text' name='name' defaultValue={name} onBlur={handleChange} style={{ width: '35%' }} />
-                </div>
-                {/* email input */}
-                <div className='my-3 d-flex justify-content-center'>
-                    <label htmlFor='email' className='px-3'>Email:</label>
-                    <input type='email' name='email' defaultValue={email} onBlur={handleChange} style={{ width: '35%' }} />
-                </div>
-                {/* message text area */}
-                <div className='my-3 d-flex justify-content-center'>
-                    <label htmlFor='message' className='px-3'>Message:</label>
-                    <textarea name='message' rows='5' defaultValue={message} onBlur={handleChange} style={{ width: '35%' }} />
-                </div>
-                {/* if errorMessage print errorMessage text to alert user */}
-                {errorMessage && (
-                    <div className='my-3 d-flex justify-content-center'>
-                        <p className='error-text'>{errorMessage}</p>
-                    </div>
-                )}
-                <div className='my-3 d-flex justify-content-center'>
-                    <button type='submit' data-testid='submit' className='btn'>Submit</button>
-                </div>
-            </form>
+            <Container className='my-5 mx-5'>
+                <Row>
+                    <Col>
+                        <p className='my-3 mx-3'>If you like my work, please feel free to contact me via my information below or fill out the contact form!</p>
+                        <p className='my-3 mx-3'><span>Phone:</span> (336)-613-9142</p>
+                        <p className='my-3 mx-3'><span>Email:</span> charliec1665@gmail.com</p>
+                        <p className='my-3 mx-3'><span>GitHub:</span> <a href='https://github.com/charliec1665'>charliec1665</a></p>
+                    </Col>
+                    <Col>
+                        <Form>
+                            <Form.Group id='contact-form' onSubmit={handleSubmit} className='my-3'>
+                                {/* name input */}
+                                <div className='pt-3 d-flex justify-content-center'>
+                                    {/* <Form.Label htmlFor='name' className='px-3'>Name:</Form.Label> */}
+                                    <Form.Control type='text' placeholder='Name' name='name' defaultValue={name} onBlur={handleChange} style={{ width: '65%' }} />
+                                </div>
+                                {/* email input */}
+                                <div className='my-3 d-flex justify-content-center'>
+                                    {/* <Form.Label htmlFor='email' className='px-3'>Email:</Form.Label> */}
+                                    <Form.Control type='email' placeholder='Email' name='email' defaultValue={email} onBlur={handleChange} style={{ width: '65%' }} />
+                                </div>
+                                {/* message text area */}
+                                <div className='my-3 d-flex justify-content-center'>
+                                    {/* <Form.Label htmlFor='message' className='px-3'>Message:</Form.Label> */}
+                                    <Form.Control as='textarea' placeholder='Message' name='message' rows={5} defaultValue={message} onBlur={handleChange} style={{ width: '65%' }} />
+                                </div>
+                                {/* if errorMessage print errorMessage text to alert user */}
+                                {errorMessage && (
+                                    <div className='my-3 d-flex justify-content-center'>
+                                        <p className='error-text'>{errorMessage}</p>
+                                    </div>
+                                )}
+                                <div className='my-3 d-flex justify-content-center'>
+                                    <Button type='submit' data-testid='submit' className='btn'>Submit</Button>
+                                </div>
+                            </Form.Group>
+                        </Form>
+                    </Col>
+                </Row>
+            </Container>
         </section>
     )
 }

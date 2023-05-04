@@ -175,6 +175,10 @@ h3 {
   width: 100%;
 }
 
+#contact p span {
+  font-weight: 700;
+}
+
 #contact-form {
   margin-bottom: 200px;
   padding-bottom: 70px;
@@ -183,7 +187,7 @@ h3 {
 .btn {
   background-color: var(--dark-color);
   color: var(--med-color);
-  margin-left: 345px;
+  margin-left: 50%;
 }
 
 /* RESUME STARTS HERE */
