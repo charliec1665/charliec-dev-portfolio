@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/charliec-dev-portfolio/static/css/main.c8736dd3.css",
-    "main.js": "/charliec-dev-portfolio/static/js/main.376f7f96.js",
+    "main.css": "/charliec-dev-portfolio/static/css/main.6313eee7.css",
+    "main.js": "/charliec-dev-portfolio/static/js/main.97005110.js",
     "static/js/787.1c86ac0b.chunk.js": "/charliec-dev-portfolio/static/js/787.1c86ac0b.chunk.js",
-    "static/media/me-img.jpg": "/charliec-dev-portfolio/static/media/me-img.aa47d65ad47a33c9656e.jpg",
     "static/media/hero-cord-image.png": "/charliec-dev-portfolio/static/media/hero-cord-image.9e033b7d7e41e3fe3139.png",
-    "static/media/official-work-sample1.png": "/charliec-dev-portfolio/static/media/official-work-sample1.f3322e83358e30b93acf.png",
+    "static/media/work-sample-runbuddy.png": "/charliec-dev-portfolio/static/media/work-sample-runbuddy.854278a556000d821263.png",
     "static/media/official-work-sample4.jpeg": "/charliec-dev-portfolio/static/media/official-work-sample4.a0b3e99312c083d33561.jpeg",
-    "static/media/official-work-sample2.png": "/charliec-dev-portfolio/static/media/official-work-sample2.de9810ae6c0f4dcf224a.png",
-    "static/media/official-work-sample5.png": "/charliec-dev-portfolio/static/media/official-work-sample5.4c114c2accd738272475.png",
+    "static/media/me-img-300x400.jpg": "/charliec-dev-portfolio/static/media/me-img-300x400.6b2a4c99069b1db637cb.jpg",
+    "static/media/work-sample-pokedex.png": "/charliec-dev-portfolio/static/media/work-sample-pokedex.dac40fbbc6c6ad3e40dc.png",
+    "static/media/work-sample-iNeedaDrink.png": "/charliec-dev-portfolio/static/media/work-sample-iNeedaDrink.07b6e9b90b57ec891b99.png",
     "static/media/logo-stackoverflow.png": "/charliec-dev-portfolio/static/media/logo-stackoverflow.ba752b5769584b2cdaa1.png",
     "index.html": "/charliec-dev-portfolio/index.html",
-    "main.c8736dd3.css.map": "/charliec-dev-portfolio/static/css/main.c8736dd3.css.map",
-    "main.376f7f96.js.map": "/charliec-dev-portfolio/static/js/main.376f7f96.js.map",
+    "main.6313eee7.css.map": "/charliec-dev-portfolio/static/css/main.6313eee7.css.map",
+    "main.97005110.js.map": "/charliec-dev-portfolio/static/js/main.97005110.js.map",
     "787.1c86ac0b.chunk.js.map": "/charliec-dev-portfolio/static/js/787.1c86ac0b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8736dd3.css",
-    "static/js/main.376f7f96.js"
+    "static/css/main.6313eee7.css",
+    "static/js/main.97005110.js"
   ]
 }

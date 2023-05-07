@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { validateEmail } from '../../utils/helpers'
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 // REACT BOOTSTRAP
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -46,41 +46,44 @@ function ContactForm() {
         }
     }
 
-    // handle submission of form data
-    function handleSubmit(e) {
+    // Handle submission of form data
+        // function handleSubmit(e) {
+        //     e.preventDefault();
+        //     console.log(formState);
+        // };
+
+   
+    const form = useRef();
+
+    function sendEmail(e) {
         e.preventDefault();
-        console.log(formState);
+
+        emailjs.sendForm('portfolio_contact', 'portfolio_contact_form', form.current, 'BfYQUzIt-ih1oyqmY')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     };
-    // export const HandleSubmit(e) {
-    //     e.preventDefault();
-    //     console.log(formState);
-    //     const form= useRef();
-    //     // use emailjs to send the form input to charliec1665@gmail.com
-    //     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-    //         .then((result) => {
-    //             console.log(result.text);
-    //         }, (error) => {
-    //             console.log(error.text);
-    //         });
-    // };
+    
     
     // JSX
     return (
         <section className='my-5 mx-5 justify-content-center'>
             <h3 className='my-3 d-flex justify-content-center' id='contact'>Contact Me</h3>
-            <Container className='my-5 mx-5'>
+            <Container className='my-5 mx-5 d-flex justify-content-around'>
                 <Row>
                     <Col>
-                        <p className='my-3 mx-3'>If you like my work, please feel free to contact me via my information below or fill out the contact form!</p>
+                        <p className='my-3 mx-3'>If you like my work, please feel free to contact me via my information below or fill out the contact form! Please remember to include your name and contact info so that I can get back to you.</p>
                         <p className='my-3 mx-3'><span>Phone:</span> (336)-613-9142</p>
                         <p className='my-3 mx-3'><span>Email:</span> charliec1665@gmail.com</p>
                         <p className='my-3 mx-3'><span>GitHub:</span> <a href='https://github.com/charliec1665'>charliec1665</a></p>
                     </Col>
                     <Col>
                         <Form>
-                            <Form.Group id='contact-form' onSubmit={handleSubmit} className='my-3'>
+                            <Form.Group id='contact-form' ref={form} onSubmit={sendEmail} className='my-3'>
                                 {/* name input */}
-                                <div className='pt-3 d-flex justify-content-center'>
+                                <div className='d-flex justify-content-center'>
                                     {/* <Form.Label htmlFor='name' className='px-3'>Name:</Form.Label> */}
                                     <Form.Control type='text' placeholder='Name' name='name' defaultValue={name} onBlur={handleChange} style={{ width: '65%' }} />
                                 </div>
