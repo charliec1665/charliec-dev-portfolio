@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react'
 import { validateEmail } from '../../utils/helpers'
-// import emailjs from '@emailjs/browser';
 // REACT BOOTSTRAP
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -60,7 +59,7 @@ function ContactForm() {
     const [isLoading, setIsLoading] = useState(false);
     const form = useRef();
 
-    function handleSubmit(e) {
+    const handleSubmit = e => {
         e.preventDefault();
         const req = {
             from_name: name,
@@ -100,7 +99,7 @@ function ContactForm() {
                         {isLoading ?
                             <Spinner animation='border' variant='info'/>
                             : formSent ? (
-                                <div className='my-3 d-flex justify-content-center'>
+                                <div className='d-flex justify-content-center'>
                                     <p className='success-text'> Your message has been sent! </p>
                                 </div>
                             )
@@ -110,15 +109,15 @@ function ContactForm() {
                             <Form.Group id='contact-form' ref={form} onSubmit={handleSubmit} className='my-3'>
                                 {/* name input */}
                                 <div className='d-flex justify-content-center'>
-                                    <Form.Control type='text' placeholder='Name' name='from_name' defaultValue={name} onBlur={handleChange} style={{ width: '65%' }} />
+                                    <Form.Control type='text' placeholder='Name' name='name' autoComplete='name' defaultValue={name} onBlur={handleChange} style={{ width: '65%' }} />
                                 </div>
                                 {/* email input */}
                                 <div className='my-3 d-flex justify-content-center'>
-                                    <Form.Control type='email' placeholder='Email' name='from_email' defaultValue={email} onBlur={handleChange} style={{ width: '65%' }} />
+                                    <Form.Control type='email' placeholder='Email' name='email' autoComplete='email' defaultValue={email} onBlur={handleChange} style={{ width: '65%' }} />
                                 </div>
                                 {/* message text area */}
                                 <div className='my-3 d-flex justify-content-center'>
-                                    <Form.Control as='textarea' placeholder='Message' name='message' rows={5} defaultValue={message} onBlur={handleChange} style={{ width: '65%' }} />
+                                    <Form.Control as='textarea' placeholder='Tell me about your project' name='message' rows={5} defaultValue={message} onBlur={handleChange} style={{ width: '65%' }} />
                                 </div>
                                 {/* if errorMessage print errorMessage text to alert user */}
                                 {errorMessage && (
@@ -127,7 +126,7 @@ function ContactForm() {
                                     </div>
                                 )}
                                 <div className='my-3 d-flex justify-content-center'>
-                                    <Button type='submit' data-testid='submit' className='btn'>Submit</Button>
+                                    <Button type='submit' className='btn'>Send</Button>
                                 </div>
                             </Form.Group>
                         </Form>
