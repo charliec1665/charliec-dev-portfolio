@@ -1,12 +1,13 @@
 import React, { useState, useRef } from 'react'
 import { validateEmail } from '../../utils/helpers'
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 // REACT BOOTSTRAP
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import Spinner from 'react-bootstrap/Spinner';
 
 
 function ContactForm() {
@@ -45,26 +46,42 @@ function ContactForm() {
             setFormState({...formState, [e.target.name]: e.target.value })
         }
     }
-
+    // INITIAL BOOTCAMP SUBMISSION CODE / NOT WORKING
     // Handle submission of form data
         // function handleSubmit(e) {
         //     e.preventDefault();
         //     console.log(formState);
         // };
 
-   
+
+    // TUTORIAL STUFF HERE:
+    // handle form submission and loading state
+    const [formSent, setFormSent] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
     const form = useRef();
 
-    function sendEmail(e) {
+    function handleSubmit(e) {
         e.preventDefault();
+        const req = {
+            from_name: name,
+            from_email: email,
+            message: message
+        }
+        setIsLoading(true);
+        sendEmail(req);
+    }
 
-        emailjs.sendForm('portfolio_contact', 'portfolio_contact_form', form.current, 'BfYQUzIt-ih1oyqmY')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
+    const sendEmail = req => {
+        const params = req;
+        window.emailjs.send('portfolio_contact', 'template_suo050u', params, 'BfYQUzIt-ih1oyqmY')
+            .then(res => {
+                setIsLoading(false);
+                setFormSent(true);
+                console.log(res);
+            }).catch(e => {
+                setIsLoading(false);
             });
-    };
+    }
     
     
     // JSX
@@ -76,25 +93,31 @@ function ContactForm() {
                     <Col>
                         <p className='my-3 mx-3'>If you like my work, please feel free to contact me via my information below or fill out the contact form! Please remember to include your name and contact info so that I can get back to you.</p>
                         <p className='my-3 mx-3'><span>Phone:</span> (336)-613-9142</p>
-                        <p className='my-3 mx-3'><span>Email:</span> charliec1665@gmail.com</p>
+                        <p className='my-3 mx-3'><span>Email:</span> <a href='mailto:charliec1665@gmail.com'>charliec1665@gmail.com</a></p>
                         <p className='my-3 mx-3'><span>GitHub:</span> <a href='https://github.com/charliec1665'>charliec1665</a></p>
                     </Col>
                     <Col>
+                        {isLoading ?
+                            <Spinner animation='border' variant='info'/>
+                            : formSent ? (
+                                <div className='my-3 d-flex justify-content-center'>
+                                    <p className='success-text'> Your message has been sent! </p>
+                                </div>
+                            )
+                            : <></>
+                        }
                         <Form>
-                            <Form.Group id='contact-form' ref={form} onSubmit={sendEmail} className='my-3'>
+                            <Form.Group id='contact-form' ref={form} onSubmit={handleSubmit} className='my-3'>
                                 {/* name input */}
                                 <div className='d-flex justify-content-center'>
-                                    {/* <Form.Label htmlFor='name' className='px-3'>Name:</Form.Label> */}
-                                    <Form.Control type='text' placeholder='Name' name='name' defaultValue={name} onBlur={handleChange} style={{ width: '65%' }} />
+                                    <Form.Control type='text' placeholder='Name' name='from_name' defaultValue={name} onBlur={handleChange} style={{ width: '65%' }} />
                                 </div>
                                 {/* email input */}
                                 <div className='my-3 d-flex justify-content-center'>
-                                    {/* <Form.Label htmlFor='email' className='px-3'>Email:</Form.Label> */}
-                                    <Form.Control type='email' placeholder='Email' name='email' defaultValue={email} onBlur={handleChange} style={{ width: '65%' }} />
+                                    <Form.Control type='email' placeholder='Email' name='from_email' defaultValue={email} onBlur={handleChange} style={{ width: '65%' }} />
                                 </div>
                                 {/* message text area */}
                                 <div className='my-3 d-flex justify-content-center'>
-                                    {/* <Form.Label htmlFor='message' className='px-3'>Message:</Form.Label> */}
                                     <Form.Control as='textarea' placeholder='Message' name='message' rows={5} defaultValue={message} onBlur={handleChange} style={{ width: '65%' }} />
                                 </div>
                                 {/* if errorMessage print errorMessage text to alert user */}

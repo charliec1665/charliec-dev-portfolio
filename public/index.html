@@ -52,5 +52,13 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" 
       crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.1.0/email.min.js"></script>
+    <script type="text/javascript">
+      
+      // May need to change USERID to PUBLICKEY or similar???
+      (function(){
+        emailjs.init("%REACT_APP_EMAILJS_USERID%");
+      })();
+    </script>
   </body>
 </html>
