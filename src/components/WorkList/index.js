@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import WorkSample1 from '../../assets/images/work-sample-pokedex.png'
-import WorkSample2 from '../../assets/images/work-sample-runbuddy.png'
-import WorkSample3 from '../../assets/images/work-sample-iNeedaDrink.png'
-import WorkSample4 from '../../assets/images/official-work-sample4.jpeg'
+// import WorkSample2 from '../../assets/images/work-sample-runbuddy.png'
+import WorkSample2 from '../../assets/images/work-sample-iNeedaDrink.png'
+import WorkSample3 from '../../assets/images/work-sample-inkling.jpeg'
 // import WorkSample5 from '../../assets/images/work-sample5.jpg'
 import GithubIcon from '../../assets/logos/GitHub-Mark/PNG/GitHub-Mark-32px.png'
 
@@ -25,34 +25,24 @@ const WorkList = () => {
             github: 'https://github.com/zasen01/smooth-ops'
         },
         {
-            title: 'Run Buddy',
-            link: 'https://charliec1665.github.io/run-buddy/',
-            screenshot: WorkSample2,
-            alt: 'Work Sample 2, Run Buddy',
-            id: 'sample-tag2',
-            languages: 'HTML / CSS',
-            description: 'An application to offer fitness training services.',
-            github: 'https://github.com/charliec1665/run-buddy'
-        },
-        {
-            title: 'Inkling',
-            link: 'https://salty-wave-70415.herokuapp.com/',
-            screenshot: WorkSample4,
-            alt: 'Work Sample 3, Inkling',
-            id: 'sample-tag4',
-            languages: 'HTML / CSS / Bootstrap / React.js / NoSQL / Express.js / MongoDB',
-            description: 'Twitter-style social media application.',
-            github: 'https://github.com/ejackson1228/space-whY'
-        },
-        {
             title: 'iNeedADrink',
             link: 'https://charliec1665.github.io/i-need-a-drink/',
-            screenshot: WorkSample3,
-            alt: 'Work Sample 4, iNeedADrink',
+            screenshot: WorkSample2,
+            alt: 'Work Sample 2, iNeedADrink',
             id: 'sample-tag3',
             languages: 'HTML / CSS / Materialize / Javascript / jQuery & jQuery UI / Server-side APIs',
             description: 'Cocktail recipe generator and shopping list handler',
             github: 'https://github.com/charliec1665/wind-hawks'
+        },
+        {
+            title: 'Inkling',
+            link: 'https://github.com/charliec1665/inkling',
+            screenshot: WorkSample3,
+            alt: 'Work Sample 3, Inkling',
+            id: 'sample-tag4',
+            languages: 'Javascript / NoSQL / Express.js / MongoDB / MongooseODM',
+            description: 'API for a Twitter-style social media application',
+            github: 'https://github.com/charliec1665/inkling'
         }
     ])
 

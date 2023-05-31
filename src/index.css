@@ -160,6 +160,7 @@ h3 {
 #github-ico {
   width: 35px;
   height: 35px;
+  margin: 5px 5px 15px 5px;
   border: .5px solid var(--secondary-med-color);
   border-radius: 7px;
   box-shadow: 0px 0px 5px var(--dark-color);
@@ -173,6 +174,10 @@ h3 {
 
 #contact, #contact-form {
   width: 100%;
+}
+
+#contact-warning {
+  color: #770723;
 }
 
 #contact p span {
