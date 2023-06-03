@@ -91,7 +91,6 @@ function ContactForm() {
                 <Row>
                     <Col>
                         <p className='my-3 mx-3'>If you like my work, please feel free to contact me via my information below or fill out the contact form! Please remember to include your name and contact info so that I can get back to you.</p>
-                        <p className='my-3 mx-3' id='contact-warning'>ATTENTION: Due to technology changes, the contact form is currently out of commission - please use the number or email link below to contact me for now!</p>
                         <p className='my-3 mx-3'><span>Phone:</span> (336)-613-9142</p>
                         <p className='my-3 mx-3'><span>Email:</span> <a href='mailto:charliec1665@gmail.com'>charliec1665@gmail.com</a></p>
                         <p className='my-3 mx-3'><span>GitHub:</span> <a href='https://github.com/charliec1665'>charliec1665</a></p>
@@ -106,15 +105,15 @@ function ContactForm() {
                             )
                             : <></>
                         }
-                        <Form>
-                            <Form.Group id='contact-form' ref={form} onSubmit={handleSubmit} className='my-3'>
+                        <Form onSubmit={handleSubmit}>
+                            <Form.Group id='contact-form' ref={form}  className='my-3'>
                                 {/* name input */}
                                 <div className='d-flex justify-content-center'>
-                                    <Form.Control type='text' placeholder='Name' name='name' autoComplete='name' defaultValue={name} onBlur={handleChange} style={{ width: '65%' }} />
+                                    <Form.Control type='text' placeholder='Name' name='name' autoComplete='nope' defaultValue={name} onBlur={handleChange} style={{ width: '65%' }} />
                                 </div>
                                 {/* email input */}
                                 <div className='my-3 d-flex justify-content-center'>
-                                    <Form.Control type='email' placeholder='Email' name='email' autoComplete='email' defaultValue={email} onBlur={handleChange} style={{ width: '65%' }} />
+                                    <Form.Control type='email' placeholder='Email' name='email' autoComplete='nope' defaultValue={email} onBlur={handleChange} style={{ width: '65%' }} />
                                 </div>
                                 {/* message text area */}
                                 <div className='my-3 d-flex justify-content-center'>
