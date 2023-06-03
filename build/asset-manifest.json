@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/charliec-dev-portfolio/static/css/main.6313eee7.css",
-    "main.js": "/charliec-dev-portfolio/static/js/main.8b346dee.js",
+    "main.css": "/charliec-dev-portfolio/static/css/main.a03c3acd.css",
+    "main.js": "/charliec-dev-portfolio/static/js/main.d95c1d45.js",
     "static/js/787.1c86ac0b.chunk.js": "/charliec-dev-portfolio/static/js/787.1c86ac0b.chunk.js",
     "static/media/hero-cord-image.png": "/charliec-dev-portfolio/static/media/hero-cord-image.9e033b7d7e41e3fe3139.png",
-    "static/media/work-sample-runbuddy.png": "/charliec-dev-portfolio/static/media/work-sample-runbuddy.854278a556000d821263.png",
-    "static/media/official-work-sample4.jpeg": "/charliec-dev-portfolio/static/media/official-work-sample4.a0b3e99312c083d33561.jpeg",
+    "static/media/work-sample-inkling.jpeg": "/charliec-dev-portfolio/static/media/work-sample-inkling.6ae64ec8d756bdfa9331.jpeg",
     "static/media/me-img-300x400.jpg": "/charliec-dev-portfolio/static/media/me-img-300x400.6b2a4c99069b1db637cb.jpg",
     "static/media/work-sample-pokedex.png": "/charliec-dev-portfolio/static/media/work-sample-pokedex.dac40fbbc6c6ad3e40dc.png",
     "static/media/work-sample-iNeedaDrink.png": "/charliec-dev-portfolio/static/media/work-sample-iNeedaDrink.07b6e9b90b57ec891b99.png",
     "static/media/logo-stackoverflow.png": "/charliec-dev-portfolio/static/media/logo-stackoverflow.ba752b5769584b2cdaa1.png",
     "index.html": "/charliec-dev-portfolio/index.html",
-    "main.6313eee7.css.map": "/charliec-dev-portfolio/static/css/main.6313eee7.css.map",
-    "main.8b346dee.js.map": "/charliec-dev-portfolio/static/js/main.8b346dee.js.map",
+    "main.a03c3acd.css.map": "/charliec-dev-portfolio/static/css/main.a03c3acd.css.map",
+    "main.d95c1d45.js.map": "/charliec-dev-portfolio/static/js/main.d95c1d45.js.map",
     "787.1c86ac0b.chunk.js.map": "/charliec-dev-portfolio/static/js/787.1c86ac0b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6313eee7.css",
-    "static/js/main.8b346dee.js"
+    "static/css/main.a03c3acd.css",
+    "static/js/main.d95c1d45.js"
   ]
 }
