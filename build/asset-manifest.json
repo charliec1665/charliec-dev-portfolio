@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/charliec-dev-portfolio/static/css/main.a03c3acd.css",
-    "main.js": "/charliec-dev-portfolio/static/js/main.c34d2f4c.js",
+    "main.js": "/charliec-dev-portfolio/static/js/main.85aa5db9.js",
     "static/js/787.1c86ac0b.chunk.js": "/charliec-dev-portfolio/static/js/787.1c86ac0b.chunk.js",
     "static/media/hero-cord-image.png": "/charliec-dev-portfolio/static/media/hero-cord-image.9e033b7d7e41e3fe3139.png",
     "static/media/work-sample-inkling.jpeg": "/charliec-dev-portfolio/static/media/work-sample-inkling.6ae64ec8d756bdfa9331.jpeg",
@@ -11,11 +11,11 @@
     "static/media/logo-stackoverflow.png": "/charliec-dev-portfolio/static/media/logo-stackoverflow.ba752b5769584b2cdaa1.png",
     "index.html": "/charliec-dev-portfolio/index.html",
     "main.a03c3acd.css.map": "/charliec-dev-portfolio/static/css/main.a03c3acd.css.map",
-    "main.c34d2f4c.js.map": "/charliec-dev-portfolio/static/js/main.c34d2f4c.js.map",
+    "main.85aa5db9.js.map": "/charliec-dev-portfolio/static/js/main.85aa5db9.js.map",
     "787.1c86ac0b.chunk.js.map": "/charliec-dev-portfolio/static/js/787.1c86ac0b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a03c3acd.css",
-    "static/js/main.c34d2f4c.js"
+    "static/js/main.85aa5db9.js"
   ]
 }

@@ -45,20 +45,17 @@ function ContactForm() {
             setFormState({...formState, [e.target.name]: e.target.value })
         }
     }
-    // INITIAL BOOTCAMP SUBMISSION CODE / NOT WORKING
-    // Handle submission of form data
-        // function handleSubmit(e) {
-        //     e.preventDefault();
-        //     console.log(formState);
-        // };
 
 
     // TUTORIAL STUFF HERE:
     // handle form submission and loading state
+
+    // Hooks to manage form submission and loading state
     const [formSent, setFormSent] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const form = useRef();
 
+    // send input submissions to EmailJS form using the 'form_name', 'form_email', and 'message' value pairs
     const handleSubmit = e => {
         e.preventDefault();
         const req = {
@@ -70,6 +67,7 @@ function ContactForm() {
         sendEmail(req);
     }
 
+    // send form information through parameters using EmailJS
     const sendEmail = req => {
         const params = req;
         window.emailjs.send('portfolio_contact', 'template_suo050u', params, 'BfYQUzIt-ih1oyqmY')
@@ -96,8 +94,11 @@ function ContactForm() {
                         <p className='my-3 mx-3'><span>GitHub:</span> <a href='https://github.com/charliec1665'>charliec1665</a></p>
                     </Col>
                     <Col>
+                        {/* Loading spinner upon form submission */}
                         {isLoading ?
-                            <Spinner animation='border' variant='info'/>
+                            <div className='d-flex justify-content-center'>
+                                <Spinner animation='border' variant='info'/>
+                            </div>
                             : formSent ? (
                                 <div className='d-flex justify-content-center'>
                                     <p className='success-text'> Your message has been sent! </p>
@@ -109,6 +110,7 @@ function ContactForm() {
                             <Form.Group id='contact-form' ref={form}  className='my-3'>
                                 {/* name input */}
                                 <div className='d-flex justify-content-center'>
+                                    {/* To Disable autocomplete in React components, must set attribute to non-existing value */}
                                     <Form.Control type='text' placeholder='Name' name='name' autoComplete='nope' defaultValue={name} onBlur={handleChange} style={{ width: '65%' }} />
                                 </div>
                                 {/* email input */}
