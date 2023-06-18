@@ -12,12 +12,12 @@ function About() {
             <h3 id='about'>
                 About Me
             </h3>
-            <Container fluid='md' className='d-flex flex'>
-                <Row>
-                    <Col className='flex lg={4} justify-content-center mx-4'>
+            <Container fluid='md' className='d-flex flex justify-content-around'>
+                <Row className='d-flex flex justify-content-around'>
+                    <Col className='flex xxl={4} justify-content-center mx-4'>
                         <img src={Photo} className='my-5' alt='Charlie Carter' id='photo'/>
                     </Col>
-                    <Col id='about-paragraph' className='flex my-4 lg={8} justify-content-center'>
+                    <Col id='about-paragraph' className='flex my-4 xxl={8} justify-content-center'>
                         <Row>
                             <p className='py-3' id='p1'>
                                 Charlie is a full stack web developer with a certification from UNC Charlotte's Coding Bootcamp. Coming from a background

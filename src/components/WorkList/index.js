@@ -64,7 +64,7 @@ const WorkList = () => {
                         </a>
                         <div className="sample-tag" id={work.id}>
                             <div className='d-flex justify-content-between'>
-                                <h4>{work.title}</h4>
+                                <h4 className='align-items-center'>{work.title}</h4>
                                 <a href={work.github}>
                                     <img id='github-ico' src={GithubIcon} style={{ width: '35px' }}></img>
                                 </a>
