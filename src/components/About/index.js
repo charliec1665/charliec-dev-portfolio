@@ -1,5 +1,5 @@
 import React from 'react'
-import Photo from '../../assets/images/prof-photo.jpeg'
+import Photo from '../../assets/images/prof-photo-400x534.jpg'
 
 // REACT BOOTSTRAP
 import Container from 'react-bootstrap/Container';
@@ -12,12 +12,12 @@ function About() {
             <h3 id='about'>
                 About Me
             </h3>
-            <Container fluid='md' className='d-flex flex justify-content-center'>
+            <Container fluid='md' className='d-flex flex'>
                 <Row>
-                    <Col className='flex justify-content-center mx-2'>
-                        <img src={Photo} className='my-3' alt='Charlie Carter' id='photo'/>
+                    <Col className='flex lg={4} justify-content-center mx-4'>
+                        <img src={Photo} className='my-5' alt='Charlie Carter' id='photo'/>
                     </Col>
-                    <Col id='about-paragraph' className=''>
+                    <Col id='about-paragraph' className='flex my-4 lg={8} justify-content-center'>
                         <Row>
                             <p className='py-3' id='p1'>
                                 Charlie is a full stack web developer with a certification from UNC Charlotte's Coding Bootcamp. Coming from a background
