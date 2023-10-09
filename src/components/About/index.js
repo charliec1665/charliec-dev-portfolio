@@ -1,5 +1,5 @@
 import React from 'react'
-import Photo from '../../assets/images/prof-photo-400x534.jpg'
+import Photo from '../../assets/images/prof-photo-2-400x533.jpg'
 
 // REACT BOOTSTRAP
 import Container from 'react-bootstrap/Container';
