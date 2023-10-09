@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/charliec-dev-portfolio/static/css/main.d7052e3d.css",
-    "main.js": "/charliec-dev-portfolio/static/js/main.3436a0bb.js",
+    "main.js": "/charliec-dev-portfolio/static/js/main.69241afe.js",
     "static/js/787.1c86ac0b.chunk.js": "/charliec-dev-portfolio/static/js/787.1c86ac0b.chunk.js",
     "static/media/hero-cord-image.png": "/charliec-dev-portfolio/static/media/hero-cord-image.9e033b7d7e41e3fe3139.png",
     "static/media/work-sample-inkling.jpeg": "/charliec-dev-portfolio/static/media/work-sample-inkling.6ae64ec8d756bdfa9331.jpeg",
-    "static/media/prof-photo-400x534.jpg": "/charliec-dev-portfolio/static/media/prof-photo-400x534.f861110d14548ff25e3f.jpg",
+    "static/media/prof-photo-2-400x533.jpg": "/charliec-dev-portfolio/static/media/prof-photo-2-400x533.2f1e87886ee1e3cc477a.jpg",
     "static/media/work-sample-pokedex.png": "/charliec-dev-portfolio/static/media/work-sample-pokedex.dac40fbbc6c6ad3e40dc.png",
     "static/media/work-sample-iNeedaDrink.png": "/charliec-dev-portfolio/static/media/work-sample-iNeedaDrink.07b6e9b90b57ec891b99.png",
     "static/media/logo-stackoverflow.png": "/charliec-dev-portfolio/static/media/logo-stackoverflow.ba752b5769584b2cdaa1.png",
     "index.html": "/charliec-dev-portfolio/index.html",
     "main.d7052e3d.css.map": "/charliec-dev-portfolio/static/css/main.d7052e3d.css.map",
-    "main.3436a0bb.js.map": "/charliec-dev-portfolio/static/js/main.3436a0bb.js.map",
+    "main.69241afe.js.map": "/charliec-dev-portfolio/static/js/main.69241afe.js.map",
     "787.1c86ac0b.chunk.js.map": "/charliec-dev-portfolio/static/js/787.1c86ac0b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7052e3d.css",
-    "static/js/main.3436a0bb.js"
+    "static/js/main.69241afe.js"
   ]
 }
