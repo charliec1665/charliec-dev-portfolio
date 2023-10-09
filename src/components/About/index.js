@@ -20,7 +20,7 @@ function About() {
                     <Col id='about-paragraph' className='flex my-4 xxl={8} justify-content-center'>
                         <Row>
                             <p className='py-3' id='p1'>
-                                Charlie is a full stack web developer with a certification from UNC Charlotte's Coding Bootcamp. Coming from a background
+                                Charlie is a Frontend React Developer with a certification from UNC Charlotte's Coding Bootcamp. Coming from a background
                                 in art and illustration (with their MA in Illustration from SCAD), Charlie combines their love of learning and thirst for 
                                 challenge with their skill in creativity. Charlie offers a unique perspective when working with code, knowing that
                                 it can be just as important to nail down those little details as it is to have a design work comprehensively as a whole.
@@ -28,9 +28,9 @@ function About() {
                         </Row>
                         <Row>
                             <p className='pb-3' id='p2'>
-                                Charlie's skill set includes working with Javascript, CSS, Bootstrap, and React on the front end. As well as APIs, Node.js, 
-                                Object-Oriented Programming (OOP), Express.js, SQL, Object-Relational Mapping (ORM), Model-View-Controllers (MVC), NoSQL
-                                with Mongoose and MongoDB, PWAs, and MERN.
+                                Charlie's skill set includes working with Typescript, CSS frameworks such as Tailwind and Bootstrap, and React on the 
+                                front end. Their history gives them proficiency working within Agile development teams and experience with review and
+                                critique of their peer's work.
                             </p>
                         </Row>
                     </Col>

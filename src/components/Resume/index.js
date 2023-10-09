@@ -29,7 +29,7 @@ function Resume() {
                     </li>
                     <li>
                         Proficient in customizing web applications with <span>CSS frameworks</span> like <span>Bootstrap</span> and 
-                        <span>Materialize.</span>
+                        <span>Tailwind.</span>
                     </li>
                     <li>
                         Experience in analyzing the <span>Document Object Model (DOM) Layout, DOM Functions, and JavaScript Functions</span>
@@ -44,7 +44,7 @@ function Resume() {
                 </ul>
                 <p>View Charlie's complete resume 
                     <span>
-                        <a href='https://drive.google.com/file/d/1xW-BVzmBp-AzmbN1VJbPn5e8pkn3LesV/view?usp=sharing' 
+                        <a href='https://docs.google.com/document/d/1dZOcucoJtV-gu-lWrZKIqgc8z6jCGOeKZXBqt2XD-N0/edit?usp=sharing' 
                         id='resume-link' target='_blank'>here.</a>
                     </span>
                 </p>

@@ -20,7 +20,7 @@ const WorkList = () => {
             screenshot: WorkSample1,
             alt: 'Work Sample 1, Operation Pokèdex',
             id: 'sample-tag1',
-            languages: 'HTML / CSS / Bootstrap / Javascript / MySQL / Sequelize / Node.js / Express.js / Handlebars.js',
+            languages: 'Bootstrap / Typescript / MySQL / Sequelize / Node.js / Express.js',
             description: 'Blog-style Pokè Team Builder and social application.',
             github: 'https://github.com/zasen01/smooth-ops'
         },
@@ -30,9 +30,9 @@ const WorkList = () => {
             screenshot: WorkSample2,
             alt: 'Work Sample 2, iNeedADrink',
             id: 'sample-tag3',
-            languages: 'HTML / CSS / Materialize / Javascript / jQuery & jQuery UI / Server-side APIs',
+            languages: 'Materialize / Typescript / Server-side APIs',
             description: 'Cocktail recipe generator and shopping list handler',
-            github: 'https://github.com/charliec1665/wind-hawks'
+            github: 'https://github.com/charliec1665/i-need-a-drink'
         },
         {
             title: 'Inkling',
@@ -40,7 +40,7 @@ const WorkList = () => {
             screenshot: WorkSample3,
             alt: 'Work Sample 3, Inkling',
             id: 'sample-tag4',
-            languages: 'Javascript / NoSQL / Express.js / MongoDB / MongooseODM',
+            languages: 'Typescript / NoSQL / Express.js / MongoDB / MongooseODM',
             description: 'API for a Twitter-style social media application',
             github: 'https://github.com/charliec1665/inkling'
         }
