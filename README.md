@@ -12,7 +12,7 @@ No installation is required for this application, simply visit my portfolio page
 
 Screenshot of the web page.
 
-![Charlie Carter's development portfolio](./src/assets/images/webpage-screenshot.png)
+![Charlie Carter's development portfolio](./src/assets/images/ScreenShot1.png)
 </br>
 </br>
 
