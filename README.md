@@ -2,7 +2,7 @@
 
 ## Description
 
-Hello! My name is Charlie Carter, and this is my professional portfolio for full stack web development. If you're hiring, please take a look at my work and visit the contact page if you have any questions for me. If you're not hiring, please feel free to take a look anyways!
+Hello! My name is Charlie Carter, and this is my professional portfolio for Frontend development specializing in React. If you're hiring, please take a look at my work and visit the contact page if you have any questions for me. If you're not hiring, please feel free to take a look anyways!
 
 ## Installation
 
